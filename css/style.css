@@ -196,7 +196,7 @@ nav {
   padding: 10px 10px;
   text-decoration: none;
   font-size: 1em;
-  min-width: 120px;
+  min-width: 80px;
   text-align: left;
 }
 
@@ -240,7 +240,7 @@ a.icon {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  min-width: 120px;
+  min-width: 130px;
   text-align: left;
 }
 
@@ -250,7 +250,7 @@ a.icon {
 
   position: absolute;
   background-color: var(--lightColor0);
-  min-width: 120px;
+  min-width: 130px;
   z-index: 1;
 }
 
