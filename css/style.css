@@ -85,18 +85,19 @@ main {
 
 .text-layer {
   margin-top: 0em;
-  padding-bottom: 12em;
-  width: 100vw;
+  /* padding-bottom: 12em; */
+  margin: 0em auto;
   background-color: var(--lightColor0);
   opacity: 0.5;
+  width: 50vw;
 }
 
 .text-layer h2 {
   max-width: 300px;
-  margin: 1.5em auto;
+
   font-size: 3em;
   color: var(--lightColor3);
-  text-align: center;
+  margin: 1.5em auto;
   line-height: 1.5em;
 }
 
