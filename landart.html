@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <title>Nora Niederer</title>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- link to font-awesome (menu) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- link to google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap" 
+    >
+  </head>
+
+  <body class="landart">
+
+    <!-- top fixed header -->
+    <header class="top-fixed">
+    Willkommen
+    </header>
+    
+    <!-- menu  -->
+    <nav >
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Über mich</a>
+      <a href="contact.html">Kontakt</a>
+      
+       <div  class="dropdown" >
+      <button class="dropbtn" onclick="myFunction1()">
+      Angebot
+      <i class="fa fa-caret-down"></i> 
+        </button>
+      <div  class="dropdown-content" id="myDropdown1">
+          <a href="webdesign.html">Webdesign</a>
+          <a href="help.html">Bürohilfe</a>
+      </div>
+    </div>
+      
+    <!-- <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction2()">
+        Fotografie      
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+    </div> -->
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction3()" >Kunst
+        <i class="fa fa-caret-down " ></i>
+        </button>
+      <div class="dropdown-content" id="myDropdown3">
+          <a href="landart.html" class="active">Landart</a>
+          <!-- <a href="#">Link 2</a>
+          <a href="#">Link 3</a> -->
+      </div>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" id="menu-icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    </nav>
+
+<main >
+<!-- title -->
+  <div class="back-img" >
+   
+    <h1>Landart</h1>
+
+    <h2>Stones and more</h2>
+  </div>
+
+<!-- main content -->
+<!-- css grid -->
+  <div class="container" >  
+   
+  <div><img src="css/images/steintürmli/IMG_0383.JPG" alt=""></div>  
+ 
+  <div><img src="css/images/steintürmli/IMG_0392.JPG" alt=""></div>  
+   <div><img src="css/images/steintürmli/IMG_0384.JPG" alt=""></div>  
+  <div><img src="css/images/steintürmli/IMG_6594.JPG" alt=""></div> 
+  <div><img src="css/images/steintürmli/IMG_6824.JPG" alt=""></div>  
+  <div><img src="css/images/steintürmli/IMG_9117 Kopie.jpg" alt=""></div>  
+</div>
+    </main>
+
+    <div class="bottom"></div>
+    <footer>
+    Design &COPY;Nora Niederer
+    </footer>
+
+
+<!-- Click on icon to toggle between adding and removing the "responsive" class to topnav -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script> 
+
+<!-- Click to show submenu1 -->
+<script>
+// When the user clicks on the button, 
+// toggle between hiding and showing the dropdown content 
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+//Click to show submenu2
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown2");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+//Click to show submenu2
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown3");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+
+
+
+    
+  </body>
+</html>

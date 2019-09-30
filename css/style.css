@@ -1,0 +1,362 @@
+:root {
+  --lightColor0: white;
+  --lightColor1: #d2e1da;
+  --lightColor2: #84ae9a;
+  --lightColor3: #6baf9a;
+
+  --darkColor1: #112e2d;
+  --darkColor2: #173e3d;
+  --darkColor3: #416160;
+
+  /* farb variante 2 */
+  /* --lightColor0: #ffffff;
+  --lightColor1: whitesmoke;
+  --lightColor2: #ccd7e3;
+  --lightColor3: #93a19d;
+
+    --darkColor1: #112e2d;
+  --darkColor2: #173e3d;
+  --darkColor3: #344c7a; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--darkColor1);
+  background-color: var(--lightColor1);
+  line-height: 1.5;
+  min-height: 100vh;
+  text-align: center;
+}
+
+main {
+  max-width: 100%;
+}
+
+.container {
+  margin-top: 23em;
+
+  padding: 1.5em 1.5em;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: var(--lightColor0);
+  min-height: 100vh;
+}
+
+.container p {
+  padding: 1.5em;
+}
+
+.contact .container > div > p {
+  padding: 2.5em 1em;
+}
+
+.container img {
+  width: 100%;
+}
+
+.img-nora {
+  max-width: 300px;
+  margin: 3em 0em 5em 0em;
+}
+
+.back-img {
+  background-image: url(IMG_3569.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--lightColor1);
+  text-align: center;
+  position: fixed;
+  top: 8.6em;
+  width: 100vw;
+  height: 15em;
+  z-index: -2;
+}
+
+/* fixed header */
+.top-fixed {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding-right: 20px;
+}
+
+header {
+  padding: 30px 30px 30px 0px;
+  height: 3em;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: var(--darkColor3);
+  color: var(--lightColor1);
+}
+
+h1 {
+  font-size: 4em;
+  padding-top: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding: 0em;
+}
+
+p {
+  font-size: 1em;
+  padding-top: 1em;
+  max-width: 800px;
+  margin: 0em auto;
+}
+
+a {
+  color: var(--darkColor1);
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  bottom: 0em;
+  width: 100%;
+  height: 4em;
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+  font-size: 0.75em;
+  background-color: var(--darkColor2);
+  color: var(--lightColor1);
+}
+
+div.bottom {
+  height: 11em;
+  background-color: var(--lightColor1);
+}
+
+/* style nav */
+nav {
+  background-color: var(--lightColor2);
+  /* padding: 0px 0px; */
+  margin-top: 5.87em;
+  top: 0em;
+  position: fixed;
+  width: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+/* nav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--darkColor1);
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 1em;
+  /* min-width: 120px; */
+  text-align: left;
+}
+
+/*  highlight the current page */
+.active {
+  background-color: var(--lightColor1);
+}
+
+/* .dropdown-content .active {
+} */
+
+button a {
+  /* background-color: lightyellow; */
+  margin: -0.6em;
+  width: 100%;
+}
+
+/* Hide the link to open and close the nav on small screens */
+.topnav .icon {
+  display: none;
+}
+a.icon {
+  font-size: 25px;
+  opacity: 0.75;
+  padding: 3px 15px 3px 15px;
+}
+
+/* Dropdown container is needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  color: var(--darkColor1);
+  font-size: 1em;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  min-width: 120px;
+  text-align: left;
+}
+
+/* dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+
+  position: absolute;
+  background-color: var(--lightColor0);
+  min-width: 120px;
+  z-index: 1;
+}
+
+/* links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  padding: 10px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* background of topnav links and dropdown button on hover */
+.topnav a:hover:not(.active),
+.dropdown:hover .dropbtn {
+  color: var(--lightColor0);
+  background-color: var(--darkColor3);
+  opacity: 0.5;
+}
+
+/* background of dropdown links on hover */
+.dropdown-content a:hover:not(.active) {
+  color: var(--lightColor0);
+  background-color: var(--darkColor3);
+  opacity: 0.3;
+}
+
+/* show dropdown menu on hover the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .show {
+  display: block;
+} */
+
+/* When the screen is less than xxx pixels wide, hide all links, except for the first one ("Home"). Show the link to open and close the topnav (.icon) */
+
+@media screen and (max-width: 340px) {
+  .back-img h1 {
+    font-size: 2em;
+  }
+
+  .back-img h2 {
+    font-size: 1em;
+  }
+
+  .img-nora {
+    margin: 2em 0em;
+  }
+
+  .contact .container > div > p {
+    padding: 1em 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav {
+    padding-right: 0px;
+  }
+
+  /*  */
+  .show {
+    display: block;
+  }
+
+  /* new (selfmade) */
+  .container {
+    margin-top: 22em;
+    padding: 1.5em 0em;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(385px, 1fr));
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-top: 0em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* .img-nora {
+    max-width: 300px;
+    margin: 2em 1em;
+  } */
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
