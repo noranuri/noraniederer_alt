@@ -94,7 +94,6 @@ main {
 
 .text-layer h2 {
   max-width: 300px;
-
   font-size: 3em;
   color: var(--lightColor3);
   margin: 1.5em auto;
