@@ -305,7 +305,8 @@ a.icon {
   .contact .container > div > p {
     padding: 1em 1em;
   }
-
+}
+@media screen and (max-width: 600px) {
   .text-layer {
     width: 100vw;
   }
