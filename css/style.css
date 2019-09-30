@@ -75,6 +75,31 @@ main {
   margin: 3em 0em 5em 0em;
 }
 
+.home .container {
+  background-image: url(IMG_7758.JPG);
+  background-size: cover;
+  background-position: center;
+  padding: 0em;
+  z-index: -3;
+}
+
+.text-layer {
+  margin-top: 0em;
+  padding-bottom: 12em;
+  width: 100vw;
+  background-color: var(--lightColor0);
+  opacity: 0.5;
+}
+
+.text-layer h2 {
+  max-width: 300px;
+  margin: 1.5em auto;
+  font-size: 3em;
+  color: var(--lightColor3);
+  text-align: center;
+  line-height: 1.5em;
+}
+
 .back-img {
   background-image: url(IMG_3569.JPG);
   background-size: cover;
@@ -94,6 +119,7 @@ main {
   position: fixed;
   width: 100%;
   padding-right: 20px;
+  z-index: 3;
 }
 
 header {
@@ -154,6 +180,7 @@ nav {
   top: 0em;
   position: fixed;
   width: 100%;
+  z-index: 4;
 }
 
 .topnav {
@@ -169,7 +196,7 @@ nav {
   padding: 10px 10px;
   text-decoration: none;
   font-size: 1em;
-  /* min-width: 120px; */
+  min-width: 120px;
   text-align: left;
 }
 
@@ -289,6 +316,7 @@ a.icon {
   .topnav a.icon {
     float: right;
     display: block;
+    text-align: right;
   }
   .topnav {
     padding-right: 0px;
