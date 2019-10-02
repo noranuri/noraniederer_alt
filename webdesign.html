@@ -35,22 +35,32 @@
 
       <a href="contact.html">Kontakt</a>
 
- 
-      <div  class="dropdown" >
-      <button class="dropbtn" onclick="myFunction1()">
-      Angebot
-      <i class="fa fa-caret-down"></i> 
+      <!-- dropdown 1 - Angebot -->
+       <div  class="dropdown" >
+      <button class="dropbtn" > <a href="" class="active">Angebot</a> <i class="fa fa-caret-down" onclick="myFunction1()"></i>
         </button>
       <div  class="dropdown-content" id="myDropdown1">
           <a href="webdesign.html" class="active">Webdesign</a>
-          <a href="help.html" >Bürohilfe</a>
+          <a href="help.html">Bürohilfe</a>
       </div>
     </div>
 
-
+        <!-- dropdown 2 - Fotografie -->
+        <div class="dropdown">
+      <button class="dropbtn" > 
+        <a href="">Fotografie  </a><i class="fa fa-caret-down " onclick="myFunction2()"> </i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+          <a href="landart.html">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+    </div>
+      
+<!-- dropdown 3 - Natur & Kunst -->
     <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction3()" >Natur&Kunst
-        <i class="fa fa-caret-down " ></i>
+      <button class="dropbtn"  >
+        <a href="">Natur & Kunst   </a> <i class="fa fa-caret-down "  onclick="myFunction3()"> </i> 
         </button>
       <div class="dropdown-content" id="myDropdown3">
           <a href="landart.html">Landart</a>
@@ -58,18 +68,6 @@
           <a href="#">Link 3</a> -->
       </div>
     </div>
-      
-    <!-- <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction2()">
-        Fotografie      
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown2">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-      </div>
-    </div> -->
 
       <a href="about.html" >Über mich</a>
 
@@ -128,7 +126,7 @@
       }
     </script>
 
-       <!-- Click to show submenu1 -->
+    <!-- Click to show submenu1 -->
 <script>
 // When the user clicks on the button, 
 // toggle between hiding and showing the dropdown content 
@@ -145,20 +143,8 @@ window.onclick = function(e) {
     }
   }
 }
-//Click to show submenu2
-function myFunction2() {
-  document.getElementById("myDropdown2").classList.toggle("show");
-}
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown2");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-//Click to show submenu2
+//Click to show submenu3 - natur & kunst
 function myFunction3() {
   document.getElementById("myDropdown3").classList.toggle("show");
 }
@@ -166,6 +152,20 @@ function myFunction3() {
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var myDropdown = document.getElementById("myDropdown3");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+//Click to show submenu2 - fotografie
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown2");
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
