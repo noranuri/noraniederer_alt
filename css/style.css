@@ -132,7 +132,7 @@ canvas {
 
 .landart .back-img,
 .landscapes .back-img {
-  background-image: url(IMG_3567_kopie.jpg);
+  background-image: url(IMG_3567.jpg);
 }
 
 /* fixed header */
@@ -151,7 +151,7 @@ header {
   font-size: 1.4em;
   background-color: var(--darkColor3);
   color: var(--lightColor1);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 h1 {
