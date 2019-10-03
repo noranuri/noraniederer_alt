@@ -9,47 +9,49 @@ function myFunction() {
   }
 }
 
-// Click to show submenu1
-
-// When the user clicks on the button,
+// dropdown - submenu
 // toggle between hiding and showing the dropdown content
+
+// Click to show dropdown submenu1 - angebot
 function myFunction1() {
   document.getElementById("myDropdown1").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches(".dropbtnX")) {
-    var myDropdown = document.getElementById("myDropdown1");
-    if (myDropdown.classList.contains("show")) {
-      myDropdown.classList.remove("show");
-    }
-  }
-};
-
-//Click to show submenu3
-function myFunction3() {
-  document.getElementById("myDropdown3").classList.toggle("show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches(".dropbtnX")) {
-    var myDropdown = document.getElementById("myDropdown3");
-    if (myDropdown.classList.contains("show")) {
-      myDropdown.classList.remove("show");
-    }
-  }
-};
-//Click to show submenu2
+//Click to show dropdown submenu2 - fotografie
 function myFunction2() {
   document.getElementById("myDropdown2").classList.toggle("show");
 }
 
-window.onclick = function(e) {
-  if (!e.target.matches(".dropbtnX")) {
-    var myDropdown = document.getElementById("myDropdown2");
-    if (myDropdown.classList.contains("show")) {
-      myDropdown.classList.remove("show");
-    }
-  }
-};
+//Click to show dropdown submenu3 - natur & kunst
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it // deleted because it was not working properly...
+
+// window.onclick = function(e) {
+//   if (!e.target.matches(".dropbtn")) {
+//     var myDropdown = document.getElementById("myDropdown1");
+//     if (myDropdown.classList.contains("show")) {
+//       myDropdown.classList.remove("show");
+//     }
+//   }
+// };
+
+// window.onclick = function(e) {
+//   if (!e.target.matches(".dropbtn")) {
+//     var myDropdown = document.getElementById("myDropdown2");
+//     if (myDropdown.classList.contains("show")) {
+//       myDropdown.classList.remove("show");
+//     }
+//   }
+// };
+
+// window.onclick = function(e) {
+//   if (!e.target.matches(".dropbtn")) {
+//     var myDropdown = document.getElementById("myDropdown3");
+//     if (myDropdown.classList.contains("show")) {
+//       myDropdown.classList.remove("show");
+//     }
+//   }
+// };
