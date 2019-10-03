@@ -130,11 +130,17 @@ canvas {
   z-index: -2;
 }
 
-.back-img.imgX {
+.back-img2 {
   background-image: url(IMG_3567_Kopie.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--lightColor1);
+  text-align: center;
+  position: fixed;
+  top: 8.6em;
   width: 100vw;
   height: 15em;
+  z-index: -2;
 }
 
 /* fixed header */
