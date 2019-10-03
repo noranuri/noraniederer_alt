@@ -52,9 +52,13 @@ main {
   display: grid;
   grid-gap: 1.5em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px));
   background-color: var(--lightColor0);
   min-height: 100vh;
+}
+
+.container.con2 {
+  margin-top: 0em;
 }
 
 .container p {
@@ -67,6 +71,7 @@ main {
 
 .container img {
   width: 100%;
+  height: auto;
 }
 
 .img-nora {
@@ -251,7 +256,7 @@ i.fa {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  min-width: 140px;
+  min-width: 145px;
   text-align: left;
 }
 
@@ -260,7 +265,7 @@ i.fa {
   display: none;
   position: absolute;
   background-color: var(--lightColor0);
-  min-width: 140px;
+  min-width: 145px;
   z-index: 1;
 }
 
