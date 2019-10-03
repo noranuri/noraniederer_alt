@@ -80,11 +80,12 @@ main {
 }
 
 .home .container {
-  background-image: url(IMG_7758.JPG);
+  background-image: url(IMG_5799_korr.jpg);
   background-size: cover;
   background-position: center;
   padding: 0em;
   z-index: -3;
+  border-top: 0.5px solid var(--lightColor0);
 }
 
 .text-layer {
@@ -92,7 +93,7 @@ main {
   /* padding-bottom: 12em; */
   margin: 0em auto;
   background-color: var(--lightColor0);
-  opacity: 0.5;
+  opacity: 0.25;
   width: 50vw;
 }
 
@@ -105,7 +106,7 @@ main {
 }
 
 .back-img {
-  background-image: url(IMG_3567_Kopie.JPG);
+  background-image: url(IMG_5799_korr.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--lightColor1);
@@ -115,6 +116,10 @@ main {
   width: 100vw;
   height: 15em;
   z-index: -2;
+}
+
+.back-img.imgX {
+  background-image: url(IMG_3567_Kopie.jpg);
 }
 
 /* fixed header */
