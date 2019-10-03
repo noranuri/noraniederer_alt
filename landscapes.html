@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <title>Nora Niederer</title>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- link to font-awesome (menu) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- link to google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap" 
+    >
+  </head>
+
+  <body class="landart">
+
+    <!-- top fixed header -->
+    <header class="top-fixed">
+    Willkommen
+    </header>
+    
+    <!-- menu  -->
+    <nav >
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+
+      <a href="contact.html">Kontakt</a>
+      
+      <!-- dropdown 1 - Angebot -->
+       <div  class="dropdown" >
+      <button class="dropbtn" > <a >Angebot</a> <i class="fa fa-caret-down" onclick="myFunction1()"></i>
+        </button>
+      <div  class="dropdown-content" id="myDropdown1">
+          <a href="webdesign.html">Webdesign</a>
+          <a href="help.html">Bürohilfe</a>
+      </div>
+    </div>
+
+        <!-- dropdown 2 - Fotografie -->
+        <!-- <div class="dropdown">
+      <button class="dropbtn" > 
+        <a >Fotografie  </a><i class="fa fa-caret-down "  onclick="myFunction2()"> </i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+    </div> -->
+      
+<!-- dropdown 3 - Natur & Kunst -->
+    <div class="dropdown">
+      <button class="dropbtn"  >
+        <a class="active">Natur & Kunst   </a> <i class="fa fa-caret-down " onclick="myFunction3()"> </i> 
+        </button>
+      <div class="dropdown-content" id="myDropdown3">
+          <a href="landart.html" >Landart</a>
+          <a href="landscapes.html" class="active">Landscapes</a>
+          <!-- <a href="#">Link 3</a> -->
+      </div>
+    </div>
+      <a href="about.html">Über mich</a>
+
+    <a href="javascript:void(0);" class="icon" id="menu-icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    </nav>
+
+<main >
+<!-- title -->
+  <div class="back-img" >
+   
+    <h1>Landscapes</h1>
+
+    <h2>Beautiful Nature</h2>
+  </div>
+
+<!-- main content -->
+<!-- css grid -->
+  <div class="container" >  
+  
+
+  <!-- bilder (quer) -->
+  
+  <div><img src="css/images/diverse/IMG_3569.JPG" alt=""></div> 
+  <div><img src="css/images/19-ticino/IMG_4677_Kopie2.jpg" alt=""></div> 
+  <div><img src="css/images/19-ticino/IMG_9208_Kopie2.jpg" alt=""></div> 
+  <div><img src="css/images/19-ticino/IMG_9220_Kopie2.jpg" alt=""></div> 
+</div>
+
+<!-- bilder (hoch) -->
+<!-- <div class="container conX">
+
+  <div><img src="" alt=""></div>  
+  <div><img src="" alt=""></div>  
+  <div><img src="" alt=""></div>
+
+</div> -->
+
+<!-- bilder - quadrat -->
+<!-- <div class="container conX">
+
+  <div><img src="css/images/diverse/IMG_5827.JPG" alt=""></div>  
+  <div><img src="" alt=""></div>  
+  <div><img src="" alt=""></div>
+</div> -->
+    </main>
+
+    <div class="bottom"></div>
+    <footer>
+    Design &COPY;Nora Niederer
+    </footer>
+
+
+
+<script src="scripts/main.js" >  </script>
+
+
+
+    
+  </body>
+</html>
