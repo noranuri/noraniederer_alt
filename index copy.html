@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <title>Nora Niederer</title>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- link to font-awesome (menu) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- link to google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap" 
+    >
+  </head>
+
+  <body class="home">
+
+    <!-- top fixed header -->
+    <header class="top-fixed">
+    Willkommen
+    </header>
+    
+    <!-- menu  -->
+    <nav >
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+     
+      <a href="contact.html">Kontakt</a>
+      
+      <!-- dropdown 1 - Angebot -->
+       <div  class="dropdown" >
+      <button class="dropbtn" > <a >Angebot</a> <i class="fa fa-caret-down" onclick="myFunction1()"></i>
+        </button>
+      <div  class="dropdown-content" id="myDropdown1">
+          <a href="webdesign.html">Webdesign</a>
+          <a href="help.html">Bürohilfe</a>
+      </div>
+    </div>
+
+        <!-- dropdown 2 - Fotografie -->
+        <!-- <div class="dropdown">
+      <button class="dropbtn" > 
+        <a >Fotografie  </a><i class="fa fa-caret-down " onclick="myFunction2()"> </i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+    </div> -->
+      
+<!-- dropdown 3 - Natur & Kunst -->
+    <div class="dropdown">
+      <button class="dropbtn"  >
+        <a >Natur & Kunst   </a> <i class="fa fa-caret-down "  onclick="myFunction3()"> </i> 
+        </button>
+      <div class="dropdown-content" id="myDropdown3">
+          <a href="landart.html">Landart</a>
+          <a href="landscapes.html">Landscapes</a>
+          <!-- <a href="#">Link 3</a> -->
+      </div>
+    </div>
+
+
+<a href="about.html">Über mich</a>
+
+<!-- menu icon top -->
+    <a href="javascript:void(0);" class="icon" id="menu-icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    </nav>
+
+<main >
+<!-- title -->
+  <div class="back-img" >
+
+    <h1>Willkommen</h1>
+
+    <h2> Hier ensteht meine Website.</h2>
+  </div>
+
+<!-- main content -->
+<!-- css grid -->
+  <div class="container" >  
+    <div class="text-layer"><h2>let's<br>create<br>something beautiful<br>...</h2></div>
+</div>
+
+    <!-- include js -project -->
+    <div class="js-box">
+      	<!--This draws the Canvas on the webpage -->
+       <canvas id="mycanvas"></canvas> 
+    </div>
+    </main>
+
+    <div class="bottom"></div>
+    <footer>
+    Design &COPY;Nora Niederer
+    </footer>
+
+ <!-- Run the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+
+<script src="scripts/test.js"></script>
+
+<!-- main js for all pages (menu etc) -->
+<script src="scripts/main.js" >  </script>
+
+
+    
+  </body>
+</html>

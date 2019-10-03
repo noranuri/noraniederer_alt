@@ -105,6 +105,18 @@ main {
   line-height: 1.5em;
 }
 
+/* just for the js stuff (canvas) */
+div.js-box {
+  background-color: var(--lightColor1);
+  width: 100vw;
+}
+canvas {
+  margin-top: 5em;
+  z-index: 10;
+}
+/*  */
+/*  */
+
 .back-img {
   background-image: url(IMG_5799_korr.jpg);
   background-size: cover;
@@ -120,6 +132,9 @@ main {
 
 .back-img.imgX {
   background-image: url(IMG_3567_Kopie.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 15em;
 }
 
 /* fixed header */
