@@ -79,8 +79,13 @@ main {
   margin: 3em 0em 5em 0em;
 }
 
+#textAbout {
+  /* border-top: 0.5px solid var(--darkColor1); */
+  box-shadow: 0px -4px 4px -4px var(--darkColor3);
+}
+
 .home .container {
-  background-image: url(IMG_5799_korr.jpg);
+  background-image: url(IMG_5799_korr2.jpg);
   background-size: cover;
   background-position: center;
   padding: 0em;
@@ -89,8 +94,7 @@ main {
 }
 
 .text-layer {
-  margin-top: 0em;
-  /* padding-bottom: 12em; */
+  padding-bottom: 2em;
   margin: 0em auto;
   background-color: var(--lightColor0);
   opacity: 0.25;
@@ -101,8 +105,17 @@ main {
   max-width: 300px;
   font-size: 3em;
   color: var(--lightColor3);
-  margin: 3em auto;
+  margin: 2.5em auto 1em auto;
   line-height: 1.5em;
+}
+
+.text-layer h3 {
+  margin: 0em auto;
+  font-weight: normal;
+}
+
+.text-layer a:hover {
+  opacity: 0.75;
 }
 
 /* just for the js stuff (canvas) */
@@ -133,7 +146,7 @@ div.js-canvas {
 /*  */
 
 .back-img {
-  background-image: url(IMG_5799_korr.jpg);
+  background-image: url(IMG_5799_korr2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--lightColor1);
@@ -148,6 +161,7 @@ div.js-canvas {
 .landart .back-img,
 .landscapes .back-img {
   background-image: url(IMG_3567_k2.JPG);
+  color: var(--lightColor1);
 }
 
 /* fixed header */
@@ -205,7 +219,8 @@ footer {
   color: var(--lightColor1);
 }
 
-div.bottom {
+.landart div.bottom,
+.lanscapes div.bottom {
   height: 11em;
   background-color: var(--lightColor1);
 }
@@ -224,6 +239,7 @@ nav {
 .topnav {
   overflow: hidden;
   height: 44px;
+  box-shadow: 0 6px 6px -6px var(--lightColor1);
 }
 
 /* nav links */
@@ -310,26 +326,6 @@ i.fa {
   text-decoration: none;
   display: block;
   text-align: left;
-}
-
-/* background of topnav links and dropdown button on hover */
-.topnav a:hover:not(.active),
-.dropdown:hover .dropbtn {
-  color: var(--lightColor0);
-  background-color: var(--darkColor3);
-  opacity: 0.5;
-}
-
-/* background of dropdown links on hover */
-.dropdown-content a:hover:not(.active) {
-  color: var(--lightColor0);
-  background-color: var(--darkColor3);
-  opacity: 0.3;
-}
-
-/* show dropdown menu on hover the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .show {
@@ -467,11 +463,40 @@ i.fa {
     width: 100%;
     text-align: left;
   }
+
+  /* .topnav a:hover:not(.active),
+  .dropdown:hover .dropbtn {
+    color: var(--lightColor0);
+    background-color: var(--lightColor2);
+    opacity: 0.5;
+  } */
 }
 
 @media screen and (max-width: 340px) {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* background of topnav links and dropdown button on hover */
+  .topnav a:hover:not(.active),
+  .dropdown:hover .dropbtn {
+    color: var(--lightColor0);
+    background-color: var(--darkColor3);
+    opacity: 0.5;
+  }
+
+  /* background of dropdown links on hover */
+  .dropdown-content a:hover:not(.active) {
+    color: var(--lightColor0);
+    background-color: var(--darkColor3);
+    opacity: 0.3;
+  }
+
+  /* show dropdown menu on hover the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }

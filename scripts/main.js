@@ -18,16 +18,17 @@ function myFunction1() {
 }
 
 //Click to show dropdown submenu2 - fotografie
-function myFunction2() {
-  document.getElementById("myDropdown2").classList.toggle("show");
-}
+// function myFunction2() {
+//   document.getElementById("myDropdown2").classList.toggle("show");
+// }
 
 //Click to show dropdown submenu3 - natur & kunst
 function myFunction3() {
   document.getElementById("myDropdown3").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it // deleted because it was not working properly...
+// Close the dropdown if the user clicks outside of it
+// deleted because it was not working properly...
 
 // window.onclick = function(e) {
 //   if (!e.target.matches(".dropbtn")) {
