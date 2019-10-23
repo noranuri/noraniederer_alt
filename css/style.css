@@ -181,6 +181,8 @@ header {
   background-color: var(--darkColor3);
   color: var(--lightColor1);
   /* opacity: 0.5; */
+  background-color: var(--lightColor1);
+  color: var(--darkColor3);
 }
 
 h1 {
@@ -217,6 +219,8 @@ footer {
   font-size: 0.75em;
   background-color: var(--darkColor2);
   color: var(--lightColor1);
+  background-color: var(--lightColor1);
+  color: var(--darkColor3);
 }
 
 .landart div.bottom,
@@ -234,11 +238,12 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 4;
+  background-color: var(--lightColor0);
 }
 
 .topnav {
   overflow: hidden;
-  height: 44px;
+  height: 2.7em;
   box-shadow: 0 6px 6px -6px var(--lightColor1);
 }
 
@@ -290,9 +295,12 @@ i.fa {
 }
 
 /* Dropdown container is needed to position the dropdown content */
+
 .dropdown {
   float: left;
   overflow: hidden;
+  height: 2.9em;
+  margin-top: -0.05em;
 }
 
 /* dropdown button to fit inside the topnav */
@@ -482,9 +490,10 @@ i.fa {
   /* background of topnav links and dropdown button on hover */
   .topnav a:hover:not(.active),
   .dropdown:hover .dropbtn {
-    color: var(--lightColor0);
+    /* color: var(--lightColor0); */
     background-color: var(--darkColor3);
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    background-color: var(--lightColor1);
   }
 
   /* background of dropdown links on hover */
@@ -492,6 +501,7 @@ i.fa {
     color: var(--lightColor0);
     background-color: var(--darkColor3);
     opacity: 0.3;
+    background-color: var(--lightColor2);
   }
 
   /* show dropdown menu on hover the dropdown button */
