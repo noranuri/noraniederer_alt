@@ -44,6 +44,7 @@ body {
 
 main {
   max-width: 100%;
+  box-shadow: 0px -4px 4px -4px var(--lightColor0);
 }
 
 .container {
@@ -90,7 +91,7 @@ main {
   background-position: center;
   padding: 0em;
   z-index: -3;
-  border-top: 0.5px solid var(--lightColor0);
+  border-top: 0.5px solid var(--lightColor1);
 }
 
 .text-layer {
@@ -183,6 +184,10 @@ header {
   /* opacity: 0.5; */
   background-color: var(--lightColor1);
   color: var(--darkColor3);
+}
+
+header a {
+  text-decoration: none;
 }
 
 h1 {
@@ -385,7 +390,8 @@ i.fa {
 }
 
 @media screen and (max-width: 768px) {
-  .topnav a:not(:first-child),
+  /* .topnav a:not(:first-child), */
+  .topnav a,
   .dropdown .dropbtn {
     display: none;
   }
