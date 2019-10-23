@@ -304,8 +304,8 @@ i.fa {
 .dropdown {
   float: left;
   overflow: hidden;
-  height: 2.9em;
-  margin-top: -0.05em;
+  /* height: 2.9em;
+  margin-top: -0.05em; */
 }
 
 /* dropdown button to fit inside the topnav */
