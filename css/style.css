@@ -17,6 +17,16 @@
     --darkColor1: #112e2d;
   --darkColor2: #173e3d;
   --darkColor3: #344c7a; */
+
+  /* neue Farbvariante */
+  --lightColor0: #f9fcfb;
+  --lightColor1: #e5e5e6;
+  --lightColor2: #7d8ea0;
+  --lightColor3: #7d8ea0;
+
+  --darkColor1: #112e2d;
+  --darkColor2: #59767a;
+  --darkColor3: #59767a;
 }
 
 * {
@@ -106,7 +116,7 @@ main {
   max-width: 300px;
   font-size: 3em;
   color: var(--lightColor3);
-  margin: 2.5em auto 1em auto;
+  margin: 0.5em auto 1em auto;
   line-height: 1.5em;
 }
 
